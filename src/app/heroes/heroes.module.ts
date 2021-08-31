@@ -9,7 +9,9 @@ import { ListadoComponent } from './listado/listado.component';
         ListadoComponent
     ],
     exports:[ListadoComponent],
-    imports:[CommonModule]
+    imports:[
+        CommonModule
+    ]
 })
     export class HeroesModule{
 }
