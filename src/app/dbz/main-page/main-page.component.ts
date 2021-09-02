@@ -17,12 +17,17 @@ export class MainPageComponent {
     },
   ];
 
-  nuevo: Personaje ={
-    nombre: 'Juan',
-    poder: 200
-  }
+  nuevo: Personaje = {
+    nombre: 'Trunks',
+    poder: 6000,
+  };
 
   cambiarNombre(event: any) {
     console.log(event.target.value);
+  }
+
+  agregarNuevoPersonaje(event: Personaje) {
+    console.log(event);
+    this.personajes.push(event);
   }
 }
